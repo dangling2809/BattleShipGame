@@ -2,7 +2,7 @@
 
 You can run the game using below
 
-java -jar BattleShip.jar [Input-file]
+java -jar BattleShipGame.jar BattleShipInput.txt
 
 You can also Run unit test cases to simulate multiple scenerios.
 
