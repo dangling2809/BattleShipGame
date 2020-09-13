@@ -53,13 +53,17 @@ public class BattleShip {
         return location;
     }
 
+    public BattleShipPart removePart(String partId){
+       return  battleShipParts.remove(partId);
+    }
+
     public ConcurrentMap<String, BattleShipPart> getBattleShipParts() {
         return battleShipParts;
     }
 
     public int getTotalLives() {
         return this.battleShipParts.values().stream()
-                .collect(Collectors.summingInt(part->part.getHitsLeft().intValue()));
+                .collect(Collectors.summingInt(part->part.getHitsLeft()));
     }
 
     @Override

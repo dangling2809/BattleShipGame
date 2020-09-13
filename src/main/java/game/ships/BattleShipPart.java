@@ -22,8 +22,8 @@ public final class BattleShipPart {
         return partId;
     }
 
-    public AtomicInteger getHitsLeft() {
-        return hitsLeft;
+    public Integer getHitsLeft() {
+        return hitsLeft.get();
     }
 
     public BattleShip getBelongsTo() {

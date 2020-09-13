@@ -149,9 +149,9 @@ public final class BattleBoard {
         BattleShipPart battleShipPart= coordinates[row][column];
         if(battleShipPart!=null) {
             BattleShip battleShip=battleShipPart.handleAttack(weapon);
-            if(battleShipPart.getHitsLeft().intValue() <= 0){
+            if(battleShipPart.getHitsLeft() <= 0){
                 //remove from ship
-                battleShip.getBattleShipParts().remove(battleShipPart.getPartId(),battleShipPart);
+                battleShip.removePart(battleShipPart.getPartId());
                 //remove from board
                 coordinates[row][column]=null;
             }
