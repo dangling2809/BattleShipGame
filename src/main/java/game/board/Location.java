@@ -5,7 +5,7 @@ import game.ships.BattleShipPart;
 import java.util.Objects;
 
 /**
- *  Models a Location in game, This can used as both TargetLocation and {@link BattleShipPart} Location on  {@link BattleBoard}
+ *  Models a Location in game, For {@link game.events.FireEvent} this represents TargetLocation and {@link BattleShipPart} Location on  {@link BattleBoard}
  */
 public class Location {
 

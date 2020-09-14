@@ -24,6 +24,7 @@ public class BattleShipGame  {
 
     public void start() throws InvalidInputException {
         setup();
+        //Staring it within main thread for this assignment , Can be easily extended to multithreaded approach if there are multiple players
         player1.fire(player2);
         Logger.getAnonymousLogger().log(Level.INFO,"Game Finished SuccessFully");
     }

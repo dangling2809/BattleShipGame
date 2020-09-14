@@ -14,6 +14,9 @@ import java.util.Queue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * Models a Battle Board Assigned to Each Player
+ */
 public final class BattleBoard {
 
     private Player player;

@@ -8,6 +8,7 @@ public final class BattleShipPart {
 
     private final String partId;
 
+    // If some body runs it in multithreaded environment, Updates to hitsLeft should be atomic operation
     private final AtomicInteger hitsLeft;
 
     private final BattleShip belongsTo;

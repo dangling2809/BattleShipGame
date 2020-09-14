@@ -20,6 +20,9 @@ import java.util.logging.Logger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Concrete Implementation to {@link IParser} for parsing input from File.
+ */
 public class FileInputParser implements IParser {
 
     private final String DELEMETER=" ";
